@@ -1,6 +1,6 @@
 FROM denoland/deno:1.14.1
 RUN apt update
-RUN yes | apt install git netcat iputils-ping iproute2
+RUN yes | apt install git netcat iputils-ping iproute2 procps
 RUN mkdir /home/deno && chown deno /home/deno
 USER deno
 ENV SHELL="/bin/bash"
