@@ -1,7 +1,6 @@
-FROM denoland/deno:1.14.1
+FROM denoland/deno:1.15.2
 RUN apt update
 RUN yes | apt install git netcat iputils-ping iproute2 procps
-
 ARG USERNAME=deno
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
